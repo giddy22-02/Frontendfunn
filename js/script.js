@@ -35,7 +35,7 @@ charts.forEach(function (chart) {
         y: {
           beginAtZero: true,
         },
-      },
+      }, 
     },
   });
 });

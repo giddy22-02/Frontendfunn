@@ -15,7 +15,7 @@
   </head>
   <body>
       <!--navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <!--offcanvas trigger-->
             <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -55,10 +55,8 @@
       </nav>
       <!--navbar-->
       <!--offcanvas-->
-      <!--<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-        Link with href
-      </a>
-    -->
+    
+     
       
       
       <div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -73,11 +71,44 @@
 
               </li>
               <li>
-                <a href="#" class="navbar-link px-3 active"></a>
-                <span class="me-2">
-                  <i class="bi bi-speedometer2"></i>
-                </span>
-                <span>Dashboard</span>
+                <a href="#" class="nav-link px-3 active">
+                  <span class="me-2">
+                    <i class="bi bi-speedometer2"></i>
+                  </span>
+                  <span>Dashboard</span>
+                
+                </a>
+                
+              </li>
+              <li class="my">
+                <hr class="dropdown-divider"/>
+              </li>
+              <li>
+                <div class="text-muted small fw-bold text-uppercase px-3"> interface
+
+                </div>
+
+              </li>
+              <li>
+                <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <span class="me-2" ><i class="bi bi-layout-split"></i></span>
+                  <span>layouts</span>
+                  <span class="right-icon ms-auto"> 
+                    <i class="bi bi-chevron-down"></i>
+                  </span>
+                </a>
+                <div class="collapse" id="collapseExample">
+                  <div >
+                    <ul class="navbar-nav ps-3">
+                      <li>
+                        <a href="#" class="nav-link px-3">
+                          <span class="me-2" ><i class="bi bi-layout-split"></i></span>
+                  <span>Nested Links</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
             </ul>
 
@@ -87,9 +118,219 @@
         </div>
       </div>
       <!--offcanvas-->
+      <main class="mt-5 pt-3">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 fw-bold fs-3">Dashboard</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 mb-3">
+      <div class="card text-white bg-primary h-100">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card text-white bg-primary h-100">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card text-white bg-warning h-100">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <div class="card text-white bg-danger h-100">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          Charts
+        </div>
+        <div class="card-body">
+          <canvas class="chart" width="400" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          Charts
+        </div>
+        <div class="card-body">
+          <canvas class="chart" width="400" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col md-12">
+      <div class="card">
+        <div class="card-header">
+          Data Tables
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table 
+            id="example" 
+            class="table table-striped data-table" 
+            style="width:100%">
+            <thread>
+              <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start Date</th>
+                <th>Salary</th>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+              <var><var><var><var><var>v</var></var></var></var></var>
+              <tr>
+                <td>Gideon Kiplangat</td>
+                <td>Sofware Engineer</td>
+                <td>Israel</td>
+                <td>23</td>
+                <td>22-03-2023</td>
+                <td>$9600</td>
+              </tr>
+            </thread>
+              
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </main>
       <!--adding js ...................................files-->
       <script src="./js/bootstrap.bundle.min.js"></script>
       <script src="./js/jquery-3.5.1.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
       <script src="./js/jquery.dataTables.min.js"></script>
       <script src="./js/dataTables.bootstrap5.min.js"></script>
       <script src="./js/script.js"></script>
